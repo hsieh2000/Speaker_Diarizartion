@@ -317,13 +317,14 @@ def call(path: str, speaker_embedding: dict = None, *args):
     
     # downstream processing
     clustered_seg_lst = x.assign_clusters(timestamp_lst, cluster_result)
-    clustered_seg_lst = x.speaker_recognition(clustered_seg_lst, most_similar_speaker, similarity_ratio, config["init"]["threshold"])
+    if speaker_embedding:
+        clustered_seg_lst = x.speaker_recognition(clustered_seg_lst, most_similar_speaker, similarity_ratio, config["init"]["threshold"])
 
     if not str2bool(config["preprocessing"]["vad_keep_length"]):
         clustered_seg_lst = timestamp_recover(time_mapping_lst, clustered_seg_lst)
         speaker_diarization_result = x.segmentation_annote_with_clusters(
-            x.segmentation_annote_with_clusters(clustered_seg_lst, min_noise_ignore=200), 
-            min_noise_ignore=0, report_seg_cnt = False
+            x.segmentation_annote_with_clusters(clustered_seg_lst, min_noise_ignore=100), 
+            min_noise_ignore=0
         )
 
     # speaker-cluster mapping
@@ -334,9 +335,10 @@ def call(path: str, speaker_embedding: dict = None, *args):
             print(f"before: {before_smoothing_len}, after: {after_smoothing_len}")
             before_smoothing_len = len(speaker_diarization_result)
             speaker_diarization_result = x.speaker_cluster_smoothing(speaker_diarization_result)
-            speaker_diarization_result = x.segmentation_annote_with_clusters(speaker_diarization_result, min_noise_ignore=0, report_seg_cnt = False)
+            speaker_diarization_result = x.segmentation_annote_with_clusters(speaker_diarization_result, min_noise_ignore=0)
             after_smoothing_len = len(speaker_diarization_result)
 
+    speaker_diarization_result = x.segmentation_annote_with_clusters(speaker_diarization_result, min_noise_ignore=0, report_seg_cnt = False)
     output_path = output(speaker_diarization_result, x.INPUT_PATH, x.OUTPUT_DIR, x.module)
 
     # clean temp folder
@@ -350,9 +352,12 @@ def call(path: str, speaker_embedding: dict = None, *args):
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("-p", "--path", help="input audio path", dest="path", type=str, required=True)
+    parser.add_argument("-sa", "--speaker_anchor", help="Path to speaker_anchor.json", dest="speaker_anchor", type=str, required=False, default=None)
+
     args = parser.parse_args()
-    x = diarization(args.path)
-    print("customized_diarization has initiailized.")
+    # x = diarization(args.path)
+    # print("customized_diarization has initiailized.")
+    call(args.path, args.speaker_anchor)
 
 
 # Reference:
