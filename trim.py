@@ -24,20 +24,19 @@ def media_trim(input_path: str|Path, start: int, stop: int):
         video_to_audio(input_path, output_path_for_file_type_convert)
         wav, _ = librosa.load(output_path_for_file_type_convert, sr=sample_rate)
         sf.write(output_path_for_media_trim, wav[int(start*sample_rate): int(stop*sample_rate)], sample_rate)
+        os.remove(output_path_for_file_type_convert)
     elif file_type == "audio":
         wav, _ = librosa.load(input_path, sr=sample_rate)
         sf.write(output_path_for_media_trim, wav[int(start*sample_rate): int(stop*sample_rate)], sample_rate)
     else:
         raise TypeError("Unsupport file type") 
     
-    os.remove(output_path_for_file_type_convert)
-
 def transcription_trim(input_path: str|Path, start: int, stop: int):
     
-    video_dir = Path("video_data")
-    dir_exist_check(video_dir)
+    trans_dir = Path("transcription_data")
+    dir_exist_check(trans_dir)
     filename, extension = ".".join(os.path.basename(input_path).split(".")[:-1]), os.path.basename(input_path).split(".")[-1]
-    output_path_for_trans_trim = video_dir / f"{filename}_trim_{start}_{stop}.txt"
+    output_path_for_trans_trim = trans_dir / f"{filename}_trim_{start}_{stop}.txt"
 
     transcription_lst = []
     with open(input_path, 'r', encoding='utf-8') as f:
