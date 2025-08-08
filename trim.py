@@ -57,8 +57,8 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("-mp", "--media_path", help="input media path", dest="media_path", type=str, required=False, default=None)
     parser.add_argument("-tp", "--transcription_path", help="transcription path", dest="transcription_path", type=str, required=False, default=None)
-    parser.add_argument("-str", "--start", help="The starting offset of the new trimmed file speakers j", dest="start", type=int, required=True)
-    parser.add_argument("-stp", "--stop", help="The string assigned source join with `|`, e.g. `./file1.mp4|./file2.mp4`", dest="stop", type=int, required=True)
+    parser.add_argument("-str", "--start", help="The start time in seconds", dest="start", type=int, required=True)
+    parser.add_argument("-stp", "--stop", help="The stop time in seconds", dest="stop", type=int, required=True)
     args = parser.parse_args()
 
     # input_path = "./video_data/20250805102550audio.mp4"

@@ -58,8 +58,8 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("-mp", "--media_path", help="input media path", dest="media_path", type=str, required=True)
     parser.add_argument("-tp", "--transcription_path", help="transcription path", dest="transcription_path", type=str, required=False)
-    parser.add_argument("-spk", "--speaker", help="The string assigned speakers join with `|`, e.g. `Jeremy|Barry`", dest="speaker", type=str, required=False)
-    parser.add_argument("-src", "--source", help="The string assigned source join with `|`, e.g. `./file1.mp4|./file2.mp4`", dest="source", type=str, required=False)
+    parser.add_argument("-spk", "--speaker", help="The string assigned speakers join with `|`, e.g. `Jeremy|Barry`", dest="speaker", type=int, required=False)
+    parser.add_argument("-src", "--source", help="The string assigned source join with `|`, e.g. `./file1.mp4|./file2.mp4`", dest="source", type=int, required=False)
     args = parser.parse_args()
 
     mf = args.media_path
@@ -69,4 +69,4 @@ if __name__ == "__main__":
 
     call(media_file=mf, transcription_file=tf, speaker=spk, source=src)
 
-# python run.py -mp "audio_data/20250805102550audio_trim_450_513.wav" -tp "video_data\\20250805102550audio_TIME.txt" -spk "陳俊 宏|李副總|蘇茂凱"
+# python run.py -mp "audio_data/20250805102550audio_trim_450_513.wav" -tp "transcription_data\\20250805102550audio_TIME.txt" -spk "陳俊 宏|李副總|蘇茂凱"
