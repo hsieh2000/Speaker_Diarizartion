@@ -1,0 +1,45 @@
+{
+    "filename": "川普才說以伊同意停火伊朗外長未達成協議.wav",
+    "diarization": [
+        {
+            "start": 0.29,
+            "end": 31.42,
+            "cluster": 1
+        },
+        {
+            "start": 33.43,
+            "end": 65.14,
+            "cluster": 2
+        },
+        {
+            "start": 65.5,
+            "end": 74.66,
+            "cluster": 3
+        },
+        {
+            "start": 75.27,
+            "end": 97.74,
+            "cluster": 2
+        },
+        {
+            "start": 98.2,
+            "end": 109.03,
+            "cluster": 0
+        },
+        {
+            "start": 109.27,
+            "end": 127.61,
+            "cluster": 2
+        },
+        {
+            "start": 128.68,
+            "end": 137.02,
+            "cluster": 4
+        },
+        {
+            "start": 137.43,
+            "end": 148.47,
+            "cluster": 2
+        }
+    ]
+}

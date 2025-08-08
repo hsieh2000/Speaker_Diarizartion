@@ -1,0 +1,7 @@
+{
+    "preprocessing":{
+        "vad": true,
+        "vad_keep_length": false,
+        "pre_emphasis": true
+    }
+}

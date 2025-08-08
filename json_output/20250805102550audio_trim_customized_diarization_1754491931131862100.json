@@ -1,0 +1,210 @@
+{
+    "filename": "20250805102550audio_trim.wav",
+    "diarization": [
+        {
+            "start": 0.0,
+            "end": 8.19,
+            "cluster": "李副總"
+        },
+        {
+            "start": 7.28,
+            "end": 11.01,
+            "cluster": "-1"
+        },
+        {
+            "start": 9.39,
+            "end": 11.17,
+            "cluster": "0"
+        },
+        {
+            "start": 9.55,
+            "end": 11.25,
+            "cluster": "1"
+        },
+        {
+            "start": 9.63,
+            "end": 11.97,
+            "cluster": "-1"
+        },
+        {
+            "start": 10.45,
+            "end": 14.99,
+            "cluster": "李副總"
+        },
+        {
+            "start": 13.85,
+            "end": 18.25,
+            "cluster": "-1"
+        },
+        {
+            "start": 17.06,
+            "end": 18.65,
+            "cluster": "陳俊宏"
+        },
+        {
+            "start": 17.46,
+            "end": 18.81,
+            "cluster": "-1"
+        },
+        {
+            "start": 17.62,
+            "end": 19.29,
+            "cluster": "0"
+        },
+        {
+            "start": 18.1,
+            "end": 25.45,
+            "cluster": "陳俊宏"
+        },
+        {
+            "start": 24.26,
+            "end": 26.09,
+            "cluster": "-1"
+        },
+        {
+            "start": 24.9,
+            "end": 26.17,
+            "cluster": "李副總"
+        },
+        {
+            "start": 24.98,
+            "end": 26.25,
+            "cluster": "-1"
+        },
+        {
+            "start": 25.06,
+            "end": 26.49,
+            "cluster": "陳俊宏"
+        },
+        {
+            "start": 25.3,
+            "end": 26.73,
+            "cluster": "李副總"
+        },
+        {
+            "start": 25.54,
+            "end": 26.89,
+            "cluster": "陳俊宏"
+        },
+        {
+            "start": 25.7,
+            "end": 26.97,
+            "cluster": "-1"
+        },
+        {
+            "start": 25.78,
+            "end": 29.93,
+            "cluster": "李副總"
+        },
+        {
+            "start": 28.74,
+            "end": 30.49,
+            "cluster": "1"
+        },
+        {
+            "start": 29.3,
+            "end": 31.05,
+            "cluster": "-1"
+        },
+        {
+            "start": 29.86,
+            "end": 31.29,
+            "cluster": "李副總"
+        },
+        {
+            "start": 30.1,
+            "end": 31.45,
+            "cluster": "1"
+        },
+        {
+            "start": 30.26,
+            "end": 31.53,
+            "cluster": "-1"
+        },
+        {
+            "start": 30.34,
+            "end": 33.77,
+            "cluster": "李副總"
+        },
+        {
+            "start": 32.58,
+            "end": 34.89,
+            "cluster": "-1"
+        },
+        {
+            "start": 33.7,
+            "end": 34.97,
+            "cluster": "1"
+        },
+        {
+            "start": 33.78,
+            "end": 39.57,
+            "cluster": "李副總"
+        },
+        {
+            "start": 38.05,
+            "end": 42.13,
+            "cluster": "-1"
+        },
+        {
+            "start": 41.39,
+            "end": 42.21,
+            "cluster": "陳俊宏"
+        },
+        {
+            "start": 41.47,
+            "end": 42.29,
+            "cluster": "-1"
+        },
+        {
+            "start": 41.55,
+            "end": 42.69,
+            "cluster": "李副總"
+        },
+        {
+            "start": 41.95,
+            "end": 47.71,
+            "cluster": "-1"
+        },
+        {
+            "start": 49.01,
+            "end": 48.11,
+            "cluster": "李副總"
+        },
+        {
+            "start": 49.41,
+            "end": 53.07,
+            "cluster": "-1"
+        },
+        {
+            "start": 54.37,
+            "end": 53.23,
+            "cluster": "陳俊宏"
+        },
+        {
+            "start": 54.53,
+            "end": 53.55,
+            "cluster": "李副總"
+        },
+        {
+            "start": 54.85,
+            "end": 59.25,
+            "cluster": "-1"
+        },
+        {
+            "start": 57.99,
+            "end": 61.75,
+            "cluster": "李副總"
+        },
+        {
+            "start": 60.23,
+            "end": 61.91,
+            "cluster": "-1"
+        },
+        {
+            "start": 60.39,
+            "end": 63.0,
+            "cluster": "陳俊宏"
+        }
+    ]
+}

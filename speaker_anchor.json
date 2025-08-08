@@ -1,0 +1,76 @@
+{
+    "speaker":[
+        {
+            "name": "TW Female",
+            "source": "./audio_data/川普才說以伊同意停火伊朗外長未達成協議.mp3",
+            "start": 0.0,
+            "stop": 10.0
+        },
+        {
+            "name": "TW Male",
+            "source": "./audio_data/川普才說以伊同意停火伊朗外長未達成協議.mp3",
+            "start": 35.0,
+            "stop": 45.0
+        },
+        {
+            "name": "US Male",
+            "source": "./audio_data/川普才說以伊同意停火伊朗外長未達成協議.mp3",
+            "start": 65.0,
+            "stop": 70.0
+        },
+        {
+            "name": "US Female",
+            "source": "./audio_data/川普才說以伊同意停火伊朗外長未達成協議.mp3",
+            "start": 97.0,
+            "stop": 103.0
+        }, 
+        {
+            "name": "Putin",
+            "source": "./audio_data/川普才說以伊同意停火伊朗外長未達成協議.mp3",
+            "start": 128.0,
+            "stop": 133.0
+        },
+        {
+            "name": "廖墨剛",
+            "source": "./video_data/20250619103004audio.mp4",
+            "start": 11,
+            "stop": 16
+        },
+        {
+            "name": "Wade Chen",
+            "source": "./video_data/20250619103004audio.mp4",
+            "start": 18,
+            "stop": 25
+        },
+        {
+            "name": "丁俊棋",
+            "source": "./video_data/20250619103004audio.mp4",
+            "start": 318,
+            "stop": 326
+        },
+        {
+            "name": "陳俊宏",
+            "source": "./video_data/20250805102550audio.mp4",
+            "start": 300,
+            "stop": 330
+        },
+        {
+            "name": "李副總",
+            "source": "./video_data/20250805102550audio.mp4",
+            "start": 408,
+            "stop": 430
+        },
+        {
+            "name": "蔡昀儒",
+            "source": "./video_data/20250805102529audio.mp4",
+            "start": 183,
+            "stop": 217
+        },
+        {
+            "name": "蘇茂凱",
+            "source": "./video_data/20250805102529audio.mp4",
+            "start": 293,
+            "stop": 323
+        }
+    ]
+}

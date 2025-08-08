@@ -1,0 +1,50 @@
+{
+    "init": {
+        "embed": "ecapa",
+        "reduction": "PCA",
+        "normalizartion": true,
+        "cluster": "HDBSCAN",
+        "speakers": 5,
+        "threshold": 0.65
+    },
+    "segmentation":{
+        "window": 1.6,
+        "stride": 0.08,
+        "batch": 1
+    },
+    "preprocessing":{
+        "vad": true,
+        "vad_keep_length": false,
+        "pre_emphasis": true
+    },
+    "dimension_reduction": {
+        "ratio": 0.85,
+        "n_components": 25,
+        "criteria": "n_components",
+        "random_state": 42,
+        "kpca": {
+            "kernel": "rbf",
+            "gamma": 1
+        }       
+    }, 
+    "clustering": {
+        "hdbscan": {
+            "min_cluster_size": 32,
+            "min_samples": 32,
+            "metric": "cosine",
+            "alpha": 0.5
+        },
+        "affinitypropagation": {
+            "random_state": 5,
+            "convergence_iter": 50,
+            "max_iter": 1000,
+            "damping": 0.5,
+            "distance": "euclidean"
+        },
+        "spectralclustering": {
+            "random_state": 5,
+            "affinity": "rbf",
+            "gamma":1.0
+        }
+    }
+}
