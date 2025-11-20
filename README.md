@@ -11,8 +11,8 @@ This program performs speaker diarization by implementing the whole workflow fro
 ## File Hierarchy
 ![file_hierarchy](file_hierarchy.png)
 
-## Technical Document
-![Technical Document](https://drive.google.com/file/d/1HbKP9HNDEuKm7bafu-3BRV_3jCezkyBg/view?usp=drive_link)
+## Technical Document  
+[Technical Document](https://drive.google.com/file/d/1HbKP9HNDEuKm7bafu-3BRV_3jCezkyBg/view?usp=drive_link)
 
 
 
